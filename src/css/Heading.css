@@ -1,0 +1,18 @@
+.navbar-nav .nav-link {
+    color: #0056b3; 
+    transition: color 0.3s ease, background-color 0.3s ease; 
+    border-radius: 15px;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #ffffff; 
+    background-color: #0056b3; 
+    border-radius: 15px; 
+    
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #0056b3;
+  }
+  
+  

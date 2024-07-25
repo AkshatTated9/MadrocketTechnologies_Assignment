@@ -1,0 +1,118 @@
+.faculty-page {
+    background: linear-gradient(to right, #e3f2fd, #bbdefb); 
+    padding: 60px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center; 
+  }
+  
+  .faculty-header {
+    font-size: 2.5rem; 
+    color: #0277bd; 
+    margin-bottom: 40px; 
+  }
+  
+  .faculty-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 30px; 
+    justify-content: center; 
+  }
+  
+  .faculty-card {
+    background: #ffffff;
+    border-radius: 15px; 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    width: 280px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  .faculty-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; 
+    overflow: hidden;
+    margin-bottom: 15px; 
+    position: relative; 
+    transition: filter 0.3s ease; 
+  }
+  
+  .faculty-image img {
+    width: 100%; 
+    height: auto;
+    filter: grayscale(100%); 
+    transition: filter 0.3s ease; 
+  }
+  
+  .faculty-card:hover .faculty-image img {
+    filter: grayscale(0%); 
+  }
+  
+  .faculty-info {
+    text-align: center;
+  }
+  
+  .faculty-info h2 {
+    color: #0277bd; 
+    font-size: 1.2rem; 
+    margin: 0 0 5px; 
+  }
+  
+  .faculty-info h3 {
+    color: #555555; 
+    font-size: 1rem; 
+    margin: 0 0 10px; 
+  }
+  
+  .faculty-info p {
+    font-size: 0.9rem; 
+    line-height: 1.4;
+    color: #333333; 
+  }
+  
+ 
+  .faculty-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); 
+  }
+  
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px); 
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .faculty-card {
+      width: 250px; 
+    }
+  
+    .faculty-image {
+      width: 100px; 
+      height: 100px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .faculty-card {
+      width: 200px; 
+    }
+  
+    .faculty-image {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  

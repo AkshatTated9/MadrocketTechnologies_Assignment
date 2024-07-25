@@ -1,0 +1,125 @@
+.admissions-page {
+    background: linear-gradient(to right, #e0f7fa, #b2ebf2); 
+    padding: 120px 20px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center; 
+    
+  }
+  
+  .admissions-header {
+    margin-bottom: 60px; 
+  }
+  
+  .admissions-header h1 {
+    color: #00796b; 
+    font-size: 3.5rem; 
+    font-weight: 700;
+    margin: 0;
+    position: relative;
+  }
+  
+  .admissions-header h1::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -15px; 
+    width: 70%; 
+    height: 5px;
+    background: #004d40; 
+    border-radius: 5px;
+    transform: translateX(-50%);
+  }
+  
+  .admissions-content {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 40px; 
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .admissions-info {
+    position: relative;
+    background: rgba(255, 255, 255, 0.9); 
+    padding: 50px; 
+    border-radius: 50%; 
+    width: 300px;
+    height: 300px; 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); 
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  .admissions-info h2 {
+    color: #00796b; 
+    font-size: 1.8rem; 
+    margin-bottom: 15px; 
+  }
+  
+  .admissions-info p {
+    font-size: 1.1rem; 
+    line-height: 1.8; 
+    color: #333;
+  }
+  
+  .dates-card {
+    position: relative;
+    background: #ffffff; 
+    padding: 40px; 
+    border-radius: 15px; 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 600px; 
+    margin: auto; 
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  .dates-card h2 {
+    color: #00796b; 
+    font-size: 1.8rem; 
+    margin-bottom: 15px; 
+  }
+  
+  .dates-list {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    font-size: 1.1rem; 
+    line-height: 1.8; 
+    color: #333;
+  }
+  
+  .dates-list li {
+    position: relative;
+    padding: 10px 0; 
+    border-bottom: 1px solid #e0e0e0; 
+  }
+  
+  .dates-list li:last-child {
+    border-bottom: none; 
+  }
+  
+  .admissions-info:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); 
+  }
+  
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px); 
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

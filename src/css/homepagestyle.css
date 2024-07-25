@@ -1,0 +1,53 @@
+#root{
+    width: 100%!important;
+    max-width: 100%;
+    padding:0px;
+}
+.gradient-background {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    min-height: 100vh;
+    color: white;
+  }
+  
+  .header-content, .footer-content {
+    color: white;
+  }
+  
+  .header-content h1, .header-content p {
+    margin: 0;
+    padding: 20px 0;
+  }
+  
+  .carousel-caption h3, .carousel-caption p {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .container-fluid{
+    background-color: aliceblue;
+  }
+  #wel{
+    background-color: rgb(48, 76, 101);
+    border-radius: 5px;
+  }
+  .bg-primary{
+    background-color: aliceblue !important;
+    border-radius: 5px;
+  }
+
+  .bg-light{
+    background-color: aliceblue !important;
+  }
+  .ho{
+    background-color: aliceblue !important;
+    padding: 15px 15px;
+  }
+  .mb-4
+  {
+    background-color: #bec5f5;
+    border-radius: 100px;
+  }
+  .text-center{
+    background-color: #bec5f5;
+    border-radius: 200px;
+  }

@@ -1,0 +1,137 @@
+.life-at-springdale {
+  background: linear-gradient(to right, #e3f2fd, #bbdefb);
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: #0277bd;
+}
+
+.extracurricular-clubs {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.extracurricular-activities, .clubs-societies {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-title h2 {
+  font-size: 2rem;
+  color: #01579b;
+}
+
+.activities-list, .clubs-list {
+  list-style: none;
+  padding: 0;
+}
+
+.activities-list ul, .clubs-list ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+}
+
+.activities-list li, .clubs-list li {
+  margin: 10px 0;
+  padding: 10px;
+  border-left: 4px solid #0277bd;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.activities-list li:hover, .clubs-list li:hover {
+  transform: translateX(10px);
+  color: #01579b;
+}
+
+.achievements-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.achievement-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 300px;
+}
+
+.pentagon {
+  width: 120px;
+  height: 120px;
+  background: #0277bd;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: bold;
+  margin-right: 20px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.pentagon span {
+  display: block;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.achievement-item:hover .pentagon {
+  background: #01579b;
+  transform: scale(1.1);
+}
+
+.student-council .council-positions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.council-member {
+  text-align: center;
+}
+
+.council-member .pentagon {
+  margin-bottom: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.council-member p {
+  font-size: 1rem;
+  color: #0277bd;
+}
+
+@media (max-width: 768px) {
+  .extracurricular-clubs {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .extracurricular-activities, .clubs-societies {
+    width: 100%;
+  }
+}
